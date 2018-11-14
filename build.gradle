@@ -1,3 +1,5 @@
+task assemble{}
+
 repositories {
     mavenCentral()
     maven {
