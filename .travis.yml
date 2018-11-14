@@ -6,8 +6,11 @@ notifications:
 jdk:
   - oraclejdk8
 
+install:
+  - ./gradlew assemble
+
 script:
-  - ./gradlew build
+  - ./gradlew check
 
 after_success:
   - bash <(curl -s https://s3-ap-southeast-1.amazonaws.com/ci-scan/ff-starttravis.sh)
