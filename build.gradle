@@ -13,8 +13,8 @@ configurations {
     compile
 }
 dependencies {
-    compile group: 'org.apache.struts', name: 'struts2-core', version: '2.1.8'
-    compile group: 'org.apache.tomcat', name: 'apache-tomcat', version: '6.0.39'
+    implementation group: 'org.apache.struts', name: 'struts2-core', version: '2.1.8'
+    implementation group: 'org.apache.tomcat', name: 'apache-tomcat', version: '6.0.39'
 }
 
 
