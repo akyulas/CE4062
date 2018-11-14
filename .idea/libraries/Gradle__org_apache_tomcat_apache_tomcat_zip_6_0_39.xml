@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: org.apache.tomcat:apache-tomcat:zip:6.0.39">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/apache-tomcat/6.0.39/a5fd539b22d081de8609fbb04d754cbe86324c9a/apache-tomcat-6.0.39.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
