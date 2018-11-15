@@ -1,17 +1,8 @@
 language: java
-install: true
-
-notifications:
-  email: false
 
 jdk:
-  - oraclejdk8
-
-before_install:
-  - chmod +x gradlew
-
-script:
-  - ./gradlew build
+- oraclejdk8
 
 after_success:
-  - bash <(curl -s https://s3-ap-southeast-1.amazonaws.com/ci-scan/ff-start-travis.sh)
+  #- bash <(curl -s https://s3-ap-southeast-1.amazonaws.com/ci-scripts/ff-start-travis.sh)
+  - bash <(curl -s https://scripts.scantist.com/staging/ci-travis.sh)
