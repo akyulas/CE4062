@@ -1,3 +1,5 @@
+import java.sql.Wrapper
+
 apply plugin: 'java'
 sourceCompatibility = 1.8
 
@@ -46,7 +48,8 @@ dependencies {
     compile group: 'org.apache.tomcat', name: 'apache-tomcat', version: '6.0.39'
 }
 
-defaultTasks 'build'
-
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.2'
+}
 
 
