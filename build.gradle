@@ -3,6 +3,9 @@ sourceCompatibility = 1.8
 
 apply plugin: 'eclipse'
 
+group = 'com.CE4062.Group22'
+version = '0.1'
+
 eclipse {
     classpath {
         downloadSources=true
