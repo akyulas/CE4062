@@ -1,6 +1,15 @@
 apply plugin: 'java'
 sourceCompatibility = 1.8
 
+apply plugin: 'eclipse'
+
+eclipse {
+    classpath {
+        downloadSources=true
+        containers = [ 'org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8' ]
+    }
+}
+
 apply plugin: 'maven'
 buildscript {
     repositories {
