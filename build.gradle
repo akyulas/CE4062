@@ -1,3 +1,6 @@
+apply plugin: 'java'
+sourceCompatibility = 1.8
+
 apply plugin: 'maven'
 buildscript {
     repositories {
@@ -21,10 +24,17 @@ repositories {
 configurations {
     compile
 }
+
+compileJava {
+    options.fork = true
+}
+
 dependencies {
     compile group: 'org.apache.struts', name: 'struts2-core', version: '2.1.8'
     compile group: 'org.apache.tomcat', name: 'apache-tomcat', version: '6.0.39'
 }
+
+defaultTasks 'build'
 
 
 
