@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/CE4062.iml" filepath="$PROJECT_DIR$/.idea/modules/CE4062.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CE4062_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CE4062_main.iml" group="CE4062" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CE4062_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CE4062_test.iml" group="CE4062" />
       <module fileurl="file://$PROJECT_DIR$/Group22.iml" filepath="$PROJECT_DIR$/Group22.iml" />
     </modules>
   </component>

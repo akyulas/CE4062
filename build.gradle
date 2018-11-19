@@ -1,18 +1,3 @@
-apply plugin: 'java'
-sourceCompatibility = 1.8
-
-apply plugin: 'eclipse'
-
-group = 'com.CE4062.Group22'
-version = '0.1'
-
-eclipse {
-    classpath {
-        downloadSources=true
-        containers = [ 'org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8' ]
-    }
-}
-
 apply plugin: 'maven'
 buildscript {
     repositories {
@@ -28,25 +13,17 @@ buildscript {
 
 repositories {
     mavenCentral()
+    maven {
+        url 'https://packages.atlassian.com/maven-public/'
+    }
 }
 
 configurations {
     compile
 }
 
-configurations.all {
-    transitive = true
-}
-
-compileJava {
-    options.fork = true
-}
-
 dependencies {
-    compile group: 'org.apache.struts', name: 'struts2-core', version: '2.1.8'
+    compile group: 'org.apache.tomcat', name: 'apache-tomcat', version: '6.0.39'
 }
-
-defaultTasks 'build'
-
 
 
