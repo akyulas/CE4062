@@ -11,19 +11,31 @@ buildscript {
     }
 }
 
+apply plugin: "net.ossindex.audit"
+apply plugin: 'org.owasp.dependencycheck'
+
 repositories {
     mavenCentral()
-    maven {
-        url 'https://packages.atlassian.com/maven-public/'
-    }
+    maven { url 'https://packages.atlassian.com/maven-public/' }
+    maven { url 'https://maven.repository.redhat.com/ga/'}
+    maven { url 'https://artifacts.alfresco.com/nexus/content/repositories/public/'}
+    maven { url 'http://repo.spring.io/libs-release/'}
+    maven { url 'http://maven.geomajas.org/'}
 }
 
 configurations {
     compile
 }
-
 dependencies {
-    compile group: 'org.apache.tomcat', name: 'apache-tomcat', version: '6.0.39'
+    compile group: 'org.apache.tomcat', name: 'apache-tomcat', version: '6.0.26'
+    compile group: 'com.redhat.rhevm.api', name: 'rhevm-api-cli-base', version: '0.9-milestone5'
+    compile group: 'org.apache.hadoop', name: 'hadoop-common', version: '2.0.0-alpha'
+    compile group: 'rubygems', name: 'json', version: '1.4.6'
+    compile group: 'org.apache.camel', name: 'camel-core', version: '2.12.2'
+    compile group: 'org.jenkins-ci.main', name: 'jenkins-core', version: '1.550'
+    compile group: 'org.jbpm', name: 'jbpm-designer-backend', version: '6.0.1.Final'
+    compile group: 'org.apache.cassandra', name: 'cassandra-all', version: '1.2.0'
 }
+
 
 
